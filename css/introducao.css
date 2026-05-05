@@ -1,0 +1,64 @@
+.introducao {
+    align-items: center;
+}
+
+.introducao h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 1.875rem;
+    position: relative;
+}
+
+.introducao h1::before {
+    content: "";
+    display: block;
+    width: 5.625rem;
+    height: 0.5rem;
+    background: #9065f5;
+    position: absolute;
+    /* bottom: 10.3125rem; */
+}
+
+.introducao p {
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+@media (max-width: 1000px) {
+    .introducao h1 {
+        font-size: 3rem;
+    }
+
+    .introducao h1::before {
+        width: 4.375rem;
+        /* bottom: 6.5625rem; */
+    }
+}
+
+@media (max-width: 800px) {
+    .introducao {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+    .introducao h1 {
+        font-size: 2rem;
+    }
+
+    .introducao h1::before {
+        background: #9065f5;
+        width: 1.875rem;
+        left: 0;
+        top: -.500rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .introducao {
+        grid-template-columns: 1fr;
+    }
+
+    .introducao img {
+        display: none;
+    }
+}
